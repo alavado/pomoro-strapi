@@ -112,4 +112,5 @@ license.txt
 exports
 .cache
 build
-config
+config/server.js
+config/database.js

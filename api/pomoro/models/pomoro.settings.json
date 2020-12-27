@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pomoros",
+  "info": {
+    "name": "Pomoro"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "texto": {
+      "type": "string"
+    },
+    "inicio": {
+      "type": "datetime"
+    },
+    "termino": {
+      "type": "datetime"
+    },
+    "proyecto": {
+      "model": "proyecto",
+      "via": "pomoros"
+    }
+  }
+}

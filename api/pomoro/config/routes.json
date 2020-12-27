@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pomoros",
+      "handler": "pomoro.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pomoros/count",
+      "handler": "pomoro.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pomoros/:id",
+      "handler": "pomoro.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pomoros",
+      "handler": "pomoro.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pomoros/:id",
+      "handler": "pomoro.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pomoros/:id",
+      "handler": "pomoro.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

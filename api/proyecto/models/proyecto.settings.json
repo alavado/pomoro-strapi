@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "proyectos",
+  "info": {
+    "name": "Proyecto"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "proyectos"
+    },
+    "nota": {
+      "type": "richtext"
+    },
+    "archivado": {
+      "type": "boolean"
+    },
+    "pomoros": {
+      "via": "proyecto",
+      "collection": "pomoro"
+    }
+  }
+}
